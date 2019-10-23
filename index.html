@@ -12,10 +12,28 @@
             <legend>Reservation</legend>
             <input type="checkbox" name="chcbox" value="checkbox" id="ckb1">
             Tickets for adults
-            <input type="button" name="btn" value="+" id="btn1" onClick="processingData('dod', 'txt1', 'txt2', '15.00')">
-            <input type="text" name="txt" value="1" id="txt1" readOnly>
-            <input type="button" name="btn" value="-" id="btn1" onClick="processingData('od', 'txt1', 'txt2', '15.00')">
-            <input type="text" name="txt" value="15.00" id="txt2" readOnly>zł
+            <input type="button" name="btn" value="+" id="btn1" onClick="processingData('add', 'v1', 'vs1', '15.00')">
+            <input type="text" name="txt" value="1" id="v1" readOnly>
+            <input type="button" name="btn" value="-" id="btn1" onClick="processingData('sub', 'v1', 'vs1', '15.00')">
+            <input type="text" name="txt" value="15" id="vs1" readOnly>zł
+        </fieldset>
+        <fieldset>
+            <legend>Reservation</legend>
+            <input type="checkbox" name="chcbox" value="checkbox" id="ckb1">
+            Tickets for kids
+            <input type="button" name="btn" value="+" id="btn2" onClick="processingData('add', 'v2', 'vs2', '10.00')">
+            <input type="text" name="txt" value="1" id="v2" readOnly>
+            <input type="button" name="btn" value="-" id="btn2" onClick="processingData('sub', 'v2', 'vs2', '10.00')">
+            <input type="text" name="txt" value="10" id="vs2" readOnly>zł
+        </fieldset>
+        <fieldset>
+            <legend>Reservation</legend>
+            <input type="checkbox" name="chcbox" value="checkbox" id="ckb1">
+            Tickets for seniors
+            <input type="button" name="btn" value="+" id="btn3" onClick="processingData('add', 'v3', 'vs3', '12.00')">
+            <input type="text" name="txt" value="1" id="v3" readOnly>
+            <input type="button" name="btn" value="-" id="btn3" onClick="processingData('sub', 'v3', 'vs3', '12.00')">
+            <input type="text" name="txt" value="10" id="vs3" readOnly>zł
         </fieldset>
     </form>
 </div>
