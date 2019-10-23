@@ -3,8 +3,22 @@
 <head>
     <meta charset="utf-8">
     <title>Tickets for cinema</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    
+<div id="numberOfTickets">
+    <form>
+        <fieldset>
+            <legend>Reservation</legend>
+            <input type="checkbox" name="chcbox" value="checkbox" id="ckb1">
+            Tickets for adults
+            <input type="button" name="btn" value="+" id="btn1" onClick="processingData('dod', 'txt1', 'txt2', '15.00')">
+            <input type="text" name="txt" value="1" id="txt1" readOnly>
+            <input type="button" name="btn" value="-" id="btn1" onClick="processingData('od', 'txt1', 'txt2', '15.00')">
+            <input type="text" name="txt" value="15.00" id="txt2" readOnly>zł
+        </fieldset>
+    </form>
+</div>
+<script language = "JavaScript" type = "text/javascript" src="script.js"></script>
 </body>
 </html>
