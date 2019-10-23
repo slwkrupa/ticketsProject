@@ -6,34 +6,39 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-<div id="numberOfTickets">
+    
+    <h3>Cinema</h3>
+    
+<div id="bookingTickets">
     <form>
+        <!--Area of booking for adults-->
         <fieldset>
-            <legend>Reservation</legend>
             <input type="checkbox" name="chcbox" value="checkbox" id="ckb1">
             Tickets for adults
             <input type="button" name="btn" value="+" id="btn1" onClick="processingData('add', 'v1', 'vs1', '15.00')">
             <input type="text" name="txt" value="1" id="v1" readOnly>
             <input type="button" name="btn" value="-" id="btn1" onClick="processingData('sub', 'v1', 'vs1', '15.00')">
-            <input type="text" name="txt" value="15" id="vs1" readOnly>zł
+            <input type="text" name="txt" value="15" id="vs1" readOnly>$
         </fieldset>
+
+        <!--Area of booking for kids-->
         <fieldset>
-            <legend>Reservation</legend>
-            <input type="checkbox" name="chcbox" value="checkbox" id="ckb1">
+            <input type="checkbox" name="chcbox" value="checkbox" id="ckb2">
             Tickets for kids
             <input type="button" name="btn" value="+" id="btn2" onClick="processingData('add', 'v2', 'vs2', '10.00')">
             <input type="text" name="txt" value="1" id="v2" readOnly>
             <input type="button" name="btn" value="-" id="btn2" onClick="processingData('sub', 'v2', 'vs2', '10.00')">
-            <input type="text" name="txt" value="10" id="vs2" readOnly>zł
+            <input type="text" name="txt" value="10" id="vs2" readOnly>$
         </fieldset>
+
+        <!--Area of booking for seniors-->
         <fieldset>
-            <legend>Reservation</legend>
-            <input type="checkbox" name="chcbox" value="checkbox" id="ckb1">
+            <input type="checkbox" name="chcbox" value="checkbox" id="ckb3">
             Tickets for seniors
             <input type="button" name="btn" value="+" id="btn3" onClick="processingData('add', 'v3', 'vs3', '12.00')">
             <input type="text" name="txt" value="1" id="v3" readOnly>
             <input type="button" name="btn" value="-" id="btn3" onClick="processingData('sub', 'v3', 'vs3', '12.00')">
-            <input type="text" name="txt" value="10" id="vs3" readOnly>zł
+            <input type="text" name="txt" value="10" id="vs3" readOnly>$
         </fieldset>
     </form>
 </div>
