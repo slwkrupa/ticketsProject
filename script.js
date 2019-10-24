@@ -12,6 +12,7 @@ function processingData(op, ticketNumber, ticketValue, price){ //op-operator
         }else{
             button.disabled="disabled";
         }
+        
     }
 
     else if(op=='sub'){
@@ -27,8 +28,8 @@ function processingData(op, ticketNumber, ticketValue, price){ //op-operator
 }
 
 
-function checkBox(boxId, firstBtn, secondBtn){
-    
+function checkBox(boxId, firstBtn, secondBtn,){
+
     if(boxId.checked){
         document.getElementById(firstBtn).disabled=false;
         document.getElementById(secondBtn).disabled=false;
@@ -36,5 +37,4 @@ function checkBox(boxId, firstBtn, secondBtn){
         document.getElementById(firstBtn).disabled=true;
         document.getElementById(secondBtn).disabled=true;
     }
-    
 }

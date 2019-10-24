@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Tickets for cinema</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <!--<link rel="stylesheet" href="style.css" type="text/css">-->
 </head>
 <body>
     
@@ -14,9 +14,9 @@
         <!--Area of booking for adults-->
         <fieldset>
             <input type="checkbox" name="chcbox" value="checkbox" id="ckb1"  onChange="checkBox('cbk1', 'btn1', 'btn2')">
-            Tickets for adults
+            Tickets for adults<br>
             <input type="button" name="btn" value="+" id="btn1" onClick="processingData('add', 'v1', 'vs1', '15.00')">
-            <input type="text" name="txt" value="1" id="v1" readOnly>
+            <input type="text" name="txt" value="1" id="v1"  size="5" readOnly>
             <input type="button" name="btn" value="-" id="btn2" onClick="processingData('sub', 'v1', 'vs1', '15.00')">
             <input type="text" name="txt" value="15" id="vs1" readOnly>$
         </fieldset>
@@ -24,9 +24,9 @@
         <!--Area of booking for kids-->
         <fieldset>
             <input type="checkbox" name="chcbox" value="checkbox" id="ckb2" onChange="checkBox('cbk2', 'btn3', 'btn4')">
-            Tickets for kids
+            Tickets for kids<br>
             <input type="button" name="btn" value="+" id="btn3" onClick="processingData('add', 'v2', 'vs2', '10.00')">
-            <input type="text" name="txt" value="1" id="v2" readOnly>
+            <input type="text" name="txt" value="1" id="v2" size="5" readOnly>
             <input type="button" name="btn" value="-" id="btn4" onClick="processingData('sub', 'v2', 'vs2', '10.00')">
             <input type="text" name="txt" value="10" id="vs2" readOnly>$
         </fieldset>
@@ -34,9 +34,9 @@
         <!--Area of booking for seniors-->
         <fieldset>
             <input type="checkbox" name="chcbox" value="checkbox" id="ckb3" onChange="checkBox('cbk3', 'btn5', 'btn6')">
-            Tickets for seniors
+            Tickets for seniors<br>
             <input type="button" name="btn" value="+" id="btn5" onClick="processingData('add', 'v3', 'vs3', '12.00')">
-            <input type="text" name="txt" value="1" id="v3" readOnly>
+            <input type="text" name="txt" value="1" id="v3" size="5" readOnly>
             <input type="button" name="btn" value="-" id="btn6" onClick="processingData('sub', 'v3', 'vs3', '12.00')">
             <input type="text" name="txt" value="10" id="vs3" readOnly>$
         </fieldset>

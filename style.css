@@ -1,4 +1,24 @@
+:root{
+    --fontColor: white;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+h3{
+    text-align: center;
+}
+form{
+    text-align: center;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#CD5C5C;
+    border: 0px;
+}
 input[type="text"]{
     border: 0px;
     text-align: center;
+    background-color: #F08080;
 }
