@@ -13,7 +13,7 @@
     <form>
         <!--Area of booking for adults-->
         <fieldset>
-            <input type="checkbox" name="chcbox" value="checkbox" id="ckb1" onChange="document.getElementById('btn1', 'btn2').disabled = this.checked">
+            <input type="checkbox" name="chcbox" value="checkbox" id="ckb1"  onChange="checkBox('cbk1', 'btn1', 'btn2')">
             Tickets for adults
             <input type="button" name="btn" value="+" id="btn1" onClick="processingData('add', 'v1', 'vs1', '15.00')">
             <input type="text" name="txt" value="1" id="v1" readOnly>
@@ -23,7 +23,7 @@
 
         <!--Area of booking for kids-->
         <fieldset>
-            <input type="checkbox" name="chcbox" value="checkbox" id="ckb2">
+            <input type="checkbox" name="chcbox" value="checkbox" id="ckb2" onChange="checkBox('cbk2', 'btn3', 'btn4')">
             Tickets for kids
             <input type="button" name="btn" value="+" id="btn3" onClick="processingData('add', 'v2', 'vs2', '10.00')">
             <input type="text" name="txt" value="1" id="v2" readOnly>
@@ -33,7 +33,7 @@
 
         <!--Area of booking for seniors-->
         <fieldset>
-            <input type="checkbox" name="chcbox" value="checkbox" id="ckb3">
+            <input type="checkbox" name="chcbox" value="checkbox" id="ckb3" onChange="checkBox('cbk3', 'btn5', 'btn6')">
             Tickets for seniors
             <input type="button" name="btn" value="+" id="btn5" onClick="processingData('add', 'v3', 'vs3', '12.00')">
             <input type="text" name="txt" value="1" id="v3" readOnly>
