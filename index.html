@@ -13,11 +13,11 @@
     <form>
         <!--Area of booking for adults-->
         <fieldset>
-            <input type="checkbox" name="chcbox" value="checkbox" id="ckb1">
+            <input type="checkbox" name="chcbox" value="checkbox" id="ckb1" onChange="document.getElementById('btn1', 'btn2').disabled = this.checked">
             Tickets for adults
             <input type="button" name="btn" value="+" id="btn1" onClick="processingData('add', 'v1', 'vs1', '15.00')">
             <input type="text" name="txt" value="1" id="v1" readOnly>
-            <input type="button" name="btn" value="-" id="btn1" onClick="processingData('sub', 'v1', 'vs1', '15.00')">
+            <input type="button" name="btn" value="-" id="btn2" onClick="processingData('sub', 'v1', 'vs1', '15.00')">
             <input type="text" name="txt" value="15" id="vs1" readOnly>$
         </fieldset>
 
@@ -25,9 +25,9 @@
         <fieldset>
             <input type="checkbox" name="chcbox" value="checkbox" id="ckb2">
             Tickets for kids
-            <input type="button" name="btn" value="+" id="btn2" onClick="processingData('add', 'v2', 'vs2', '10.00')">
+            <input type="button" name="btn" value="+" id="btn3" onClick="processingData('add', 'v2', 'vs2', '10.00')">
             <input type="text" name="txt" value="1" id="v2" readOnly>
-            <input type="button" name="btn" value="-" id="btn2" onClick="processingData('sub', 'v2', 'vs2', '10.00')">
+            <input type="button" name="btn" value="-" id="btn4" onClick="processingData('sub', 'v2', 'vs2', '10.00')">
             <input type="text" name="txt" value="10" id="vs2" readOnly>$
         </fieldset>
 
@@ -35,10 +35,16 @@
         <fieldset>
             <input type="checkbox" name="chcbox" value="checkbox" id="ckb3">
             Tickets for seniors
-            <input type="button" name="btn" value="+" id="btn3" onClick="processingData('add', 'v3', 'vs3', '12.00')">
+            <input type="button" name="btn" value="+" id="btn5" onClick="processingData('add', 'v3', 'vs3', '12.00')">
             <input type="text" name="txt" value="1" id="v3" readOnly>
-            <input type="button" name="btn" value="-" id="btn3" onClick="processingData('sub', 'v3', 'vs3', '12.00')">
+            <input type="button" name="btn" value="-" id="btn6" onClick="processingData('sub', 'v3', 'vs3', '12.00')">
             <input type="text" name="txt" value="10" id="vs3" readOnly>$
+        </fieldset>
+
+        <!--Area of summary /// tctxt - totalcost txt; tc - totalcost -->
+        <fieldset id="sumarry">
+            <input type="text" name="sum" value="total cost" id="tctxt" readOnly>
+            <input type="text" name="sum" value="0" id="tc" readOnly>
         </fieldset>
     </form>
 </div>
