@@ -13,7 +13,7 @@
     <form>
         <!--Area of booking for adults-->
         <fieldset>
-            <input type="checkbox" name="chcbox" value="checkbox" id="ckb1"  onChange="checkBox('cbk1', 'btn1', 'btn2')">
+            <input type="checkbox" name="chcbox" value="checkbox" id="ckb1"  onClick="checkNPush('ckb1', 'btn1', 'btn2', 'vs1')">
             Tickets for adults<br>
             <input type="button" name="btn" value="+" id="btn1" onClick="processingData('add', 'v1', 'vs1', '15.00')">
             <input type="text" name="txt" value="1" id="v1"  size="5" readOnly>
@@ -23,7 +23,7 @@
 
         <!--Area of booking for kids-->
         <fieldset>
-            <input type="checkbox" name="chcbox" value="checkbox" id="ckb2" onChange="checkBox('cbk2', 'btn3', 'btn4')">
+            <input type="checkbox" name="chcbox" value="checkbox" id="ckb2" onClick="checkNPush('ckb2', 'btn3', 'btn4', 'vs2')">
             Tickets for kids<br>
             <input type="button" name="btn" value="+" id="btn3" onClick="processingData('add', 'v2', 'vs2', '10.00')">
             <input type="text" name="txt" value="1" id="v2" size="5" readOnly>
@@ -33,7 +33,7 @@
 
         <!--Area of booking for seniors-->
         <fieldset>
-            <input type="checkbox" name="chcbox" value="checkbox" id="ckb3" onChange="checkBox('cbk3', 'btn5', 'btn6')">
+            <input type="checkbox" name="chcbox" value="checkbox" id="ckb3" onClick="checkNPush('ckb3', 'btn5', 'btn6', 'vs3')">
             Tickets for seniors<br>
             <input type="button" name="btn" value="+" id="btn5" onClick="processingData('add', 'v3', 'vs3', '12.00')">
             <input type="text" name="txt" value="1" id="v3" size="5" readOnly>
@@ -43,6 +43,9 @@
 
         <!--Area of summary /// tctxt - totalcost txt; tc - totalcost -->
         <fieldset id="sumarry">
+            <input type="text" name="sum" value="tax cost" id="tctxttax" readOnly>
+            <input type="text" name="sum" value="0" id="tctax" readOnly>
+            <br>
             <input type="text" name="sum" value="total cost" id="tctxt" readOnly>
             <input type="text" name="sum" value="0" id="tc" readOnly>
         </fieldset>

@@ -28,13 +28,27 @@ function processingData(op, ticketNumber, ticketValue, price){ //op-operator
 }
 
 
-function checkBox(boxId, firstBtn, secondBtn,){
+function checkNPush(boxId, firstBtn, secondBtn, valueOfText){
 
-    if(boxId.checked){
-        document.getElementById(firstBtn).disabled=false;
-        document.getElementById(secondBtn).disabled=false;
-    }else{
+    var sum = parseFloat(document.getElementById('tc').value);
+    var tax = parseFloat(document.getElementById('tctax').value);
+    var txt = parseFloat(document.getElementById(valueOfText).value);
+
+    if(document.getElementById(boxId).checked){
         document.getElementById(firstBtn).disabled=true;
         document.getElementById(secondBtn).disabled=true;
+
+        sum += txt;
+        tax = (sum*0.23);
+        document.getElementById('tc').value=(sum).toFixed(2);
+        document.getElementById('tctax').value=(tax).toFixed(2);
+    }else{
+        document.getElementById(firstBtn).disabled=false;
+        document.getElementById(secondBtn).disabled=false;
+
+        sum -= txt;
+        tax = (sum*0.23);
+        document.getElementById('tc').value=(sum).toFixed(2);
+        document.getElementById('tctax').value=(tax).toFixed(2);
     }
 }
