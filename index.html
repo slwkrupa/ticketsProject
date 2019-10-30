@@ -3,52 +3,58 @@
 <head>
     <meta charset="utf-8">
     <title>Tickets for cinema</title>
-    <!--<link rel="stylesheet" href="style.css" type="text/css">-->
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
     
-    <h3>Cinema</h3>
-    
+    <h3>TICKETS FOR CINEMA</h3>
+
+<div id="sidebar">
+    <div class="square"></div>
+    <div class="photo"><img src="popcorn.jpg"></div>
+</div>   
 <div id="bookingTickets">
     <form>
         <!--Area of booking for adults-->
         <fieldset>
-            <input type="checkbox" name="chcbox" value="checkbox" id="ckb1"  onClick="checkNPush('ckb1', 'btn1', 'btn2', 'vs1')">
-            Tickets for adults<br>
+            Tickets for adults
+            <input type="checkbox" name="chcbox" value="checkbox" id="ckb1"  onClick="checkNPush('ckb1', 'btn1', 'btn2', 'vs1')"><br>
             <input type="button" name="btn" value="+" id="btn1" onClick="processingData('add', 'v1', 'vs1', '15.00')">
-            <input type="text" name="txt" value="1" id="v1"  size="5" readOnly>
+            <input type="text" name="txt" value="1" id="v1"  size="1" readOnly>
             <input type="button" name="btn" value="-" id="btn2" onClick="processingData('sub', 'v1', 'vs1', '15.00')">
-            <input type="text" name="txt" value="15" id="vs1" readOnly>$
+            <input type="text" name="txt" value="15" id="vs1" size="5" readOnly>$
         </fieldset>
 
         <!--Area of booking for kids-->
         <fieldset>
-            <input type="checkbox" name="chcbox" value="checkbox" id="ckb2" onClick="checkNPush('ckb2', 'btn3', 'btn4', 'vs2')">
-            Tickets for kids<br>
+            Tickets for kids
+            <input type="checkbox" name="chcbox" value="checkbox" id="ckb2" onClick="checkNPush('ckb2', 'btn3', 'btn4', 'vs2')"><br>
             <input type="button" name="btn" value="+" id="btn3" onClick="processingData('add', 'v2', 'vs2', '10.00')">
-            <input type="text" name="txt" value="1" id="v2" size="5" readOnly>
+            <input type="text" name="txt" value="1" id="v2" size="1" readOnly>
             <input type="button" name="btn" value="-" id="btn4" onClick="processingData('sub', 'v2', 'vs2', '10.00')">
-            <input type="text" name="txt" value="10" id="vs2" readOnly>$
+            <input type="text" name="txt" value="10" id="vs2" size="5" readOnly>$
         </fieldset>
 
         <!--Area of booking for seniors-->
         <fieldset>
-            <input type="checkbox" name="chcbox" value="checkbox" id="ckb3" onClick="checkNPush('ckb3', 'btn5', 'btn6', 'vs3')">
-            Tickets for seniors<br>
+            Tickets for seniors
+            <input type="checkbox" name="chcbox" value="checkbox" id="ckb3" onClick="checkNPush('ckb3', 'btn5', 'btn6', 'vs3')"><br>
             <input type="button" name="btn" value="+" id="btn5" onClick="processingData('add', 'v3', 'vs3', '12.00')">
-            <input type="text" name="txt" value="1" id="v3" size="5" readOnly>
+            <input type="text" name="txt" value="1" id="v3" size="1" readOnly>
             <input type="button" name="btn" value="-" id="btn6" onClick="processingData('sub', 'v3', 'vs3', '12.00')">
-            <input type="text" name="txt" value="10" id="vs3" readOnly>$
+            <input type="text" name="txt" value="10" id="vs3" size="5" readOnly>$
         </fieldset>
 
         <!--Area of summary /// tctxt - totalcost txt; tc - totalcost -->
         <fieldset id="sumarry">
-            <input type="text" name="sum" value="tax cost" id="tctxttax" readOnly>
+            <input type="text" name="sum" value="Tax cost" id="tctxttax" readOnly>
             <input type="text" name="sum" value="0" id="tctax" readOnly>
             <br>
-            <input type="text" name="sum" value="total cost" id="tctxt" readOnly>
+            <input type="text" name="sum" value="Total cost" id="tctxt" readOnly>
             <input type="text" name="sum" value="0" id="tc" readOnly>
         </fieldset>
+
+        <input type="submit" value="Resume">
     </form>
 </div>
 <script language = "JavaScript" type = "text/javascript" src="script.js"></script>
